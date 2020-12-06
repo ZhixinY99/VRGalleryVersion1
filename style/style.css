@@ -1,0 +1,345 @@
+body {
+    background-image: url('http://www.publicdomainpictures.net/pictures/70000/velka/old-paper-texture.jpg');
+}
+
+/*top*/
+.top {
+    position: relative;
+    top: 10px;
+}
+
+.title {
+    font-family: 'Pirata One', cursive;
+    font-size: 110px;
+    text-align: center;
+    color: rgb(61, 60, 59);
+    letter-spacing: 5px;
+    word-spacing: 20px;
+}
+
+/*top information group*/
+
+.info {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.date {
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 25px;
+    position: absolute;
+    left: 80px;
+    top: -5px;
+}
+
+.price {
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 25px;
+    position: absolute;
+    left: 1110px;
+    top: -5px;
+}
+
+.logo {
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    left: 635px;
+    top: 10px;
+}
+
+.line_1 {
+    width: 1280px;
+    height: 5px;
+    position: absolute;
+    top: 60px;
+    left: 30px;
+}
+
+/*hook*/
+.hook {
+    position: relative;
+}
+
+.hook p {
+    text-align: center;
+    position: absolute;
+    bottom: 1px;
+    font-family: 'Francois One', sans-serif;
+    font-size: 20px;
+    color: rgb(94, 92, 92);
+    left: 370px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.line_2 {
+    width: 1280px;
+    height: 5px;
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+}
+
+.line_3 {
+    width: 1280px;
+    height: 5px;
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+}
+
+/*middle*/
+.middle {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 10px;
+}
+
+/*paaaaart_1*/
+.part_1 {
+    width: 200px;
+    height: 700px;
+    position: absolute;
+    left: 60px;
+    top: 10px;
+}
+
+.part_1 h3 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(53, 51, 51);
+}
+
+.part_1 p{
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(73, 73, 73);
+}
+
+/*paaaaart 2*/
+.part_2 {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 310px;
+}
+
+.part_2 h2 {
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 35px;
+    word-spacing: 5px;
+    color: rgb(41, 40, 40);
+}
+
+.pressure {
+    width: 650px;
+    height: 450px;
+}
+
+.part_2 p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    word-spacing: 1px;
+    color: rgb(61, 60, 60);
+}
+
+
+/*paaaaaaart 3*/
+.part_3 {
+    width: 300px;
+    height: 700px;
+    position: absolute;
+    left: 1010px;
+    top: 10px;
+}
+
+.link{
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+}
+
+.part_3 h3 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 25px;
+    color: rgb(53, 51, 51);
+}
+
+.part_3 h2 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 30px;
+    color: rgb(41, 40, 40);
+}
+
+.curators {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: rgb(51, 50, 50);
+}
+
+.paragraph {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(73, 73, 73);
+}
+
+
+
+
+
+/*bottom*/
+.bottom {
+    position: relative;
+    top: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottom h2 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 30px;
+    color: rgb(41, 40, 40);
+    position: absolute;
+    top: -30px;
+    left: 130px;
+}
+
+.galleries {
+    position: relative;
+    top:750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.covid {
+    position: absolute;
+    top: 50px;
+    width: 200px;
+    height: 150px;
+    left: 100px;
+}
+
+
+.earth {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    left: 450px;
+}
+
+.earth:hover {
+    cursor: pointer;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+0% { transform: translate(1px, 1px) rotate(0deg); }
+10% { transform: translate(-1px, -2px) rotate(-1deg); }
+20% { transform: translate(-3px, 0px) rotate(1deg); }
+30% { transform: translate(3px, 2px) rotate(0deg); }
+40% { transform: translate(1px, -1px) rotate(1deg); }
+50% { transform: translate(-1px, 2px) rotate(-1deg); }
+60% { transform: translate(-3px, 1px) rotate(0deg); }
+70% { transform: translate(3px, 1px) rotate(-1deg); }
+80% { transform: translate(-1px, -1px) rotate(1deg); }
+90% { transform: translate(1px, 2px) rotate(0deg); }
+100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.matter {
+    position: absolute;
+    width: 100px;
+    height: 160px;
+    top: 50px;
+    left: 770px;
+}
+
+.election {
+    position: absolute;
+    width: 190px;
+    height: 90px;
+    left: 1050px;
+    top: 75px;
+}
+
+.election:hover {
+    cursor: pointer;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+0% { transform: translate(1px, 1px) rotate(0deg); }
+10% { transform: translate(-1px, -2px) rotate(-1deg); }
+20% { transform: translate(-3px, 0px) rotate(1deg); }
+30% { transform: translate(3px, 2px) rotate(0deg); }
+40% { transform: translate(1px, -1px) rotate(1deg); }
+50% { transform: translate(-1px, 2px) rotate(-1deg); }
+60% { transform: translate(-3px, 1px) rotate(0deg); }
+70% { transform: translate(3px, 1px) rotate(-1deg); }
+80% { transform: translate(-1px, -1px) rotate(1deg); }
+90% { transform: translate(1px, 2px) rotate(0deg); }
+100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+/*artwork list*/
+.artwork_list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 1000px;
+}
+
+.artwork_list h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: rgb(46, 45, 45);
+}
+
+.artwork_list p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: rgb(73, 73, 73);
+}
+
+.covid_names {
+    position: absolute;
+    width: 300px;
+    height: 800px;
+    left: 120px;
+}
+
+.earth_names {
+    position: absolute;
+    width: 250px;
+    height: 600px;
+    left: 430px;
+}
+
+.matter_names {
+    position: absolute;
+    width: 250px;
+    height: 600px;
+    left: 720px;
+}
+
+.election_names {
+    position: absolute;
+    width: 250px;
+    height: 600px;
+    left: 1050px;
+}

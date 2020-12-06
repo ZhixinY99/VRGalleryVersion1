@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>The Election is on fire!</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<script src="aframe.min.js"></script>
+    </head>
+    
+
+<body>
+	<a-scene id="gallery-scene" antialias='true'>
+		<a-assets>
+			<!-- Behind Wall -->
+            <img id="image-B2" src="portfolio/election/swaying.jpg">
+            
+            <!-- Forward Wall -->
+			<img id="image-F3" src="portfolio/election/camera.png">
+            
+            <!-- Right Wall -->
+			<img id="image-R2" src="portfolio/election/election3.png">
+			<img id="image-R3" src="portfolio/election/election4.png">
+            
+            <!-- Left Wall -->
+			<img id="image-L4" src="portfolio/election/election1.png">
+            <img id="image-L2" src="portfolio/election/election2.png">
+		</a-assets>
+
+
+
+		<!-- Main light -->
+		<a-entity position="0 25 37.5" rotation="0 0 0" light="color: #fff; type: point; intensity: 0.9;"></a-entity>
+
+		<a-entity position="0 0 7.5">
+		  <a-camera id="camera-1" wasd-controls="acceleration:350;" active="true"></a-camera>
+		</a-entity>
+
+
+
+
+		<!-- Forward wall -->
+		<a-box width="70" height="45" depth="0.25" position="15 0 -10" color="#797D7D">
+
+			<!-- Right image: box with newspaper -->
+			<a-box width="35" height="20" depth="0.25" position="0 0 0.3"></a-box>
+
+			<a-box width="7.5" height="1" depth="0.25" position="0 -12 0.15" src="texture/gold.jpg">
+				<a-text value="Kimberly Pack" color="#FFFFFF" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-F3" width="35" height="20" depth="0.1" position="0 0 0.45"></a-image>
+		</a-box>
+
+
+
+
+		<!-- Left wall -->
+		<a-box width="100" height="45" depth="0.25" position="-20 0 40" rotation="0 90 0" color="#797D7D">
+			<a-entity position="0 0 30">
+			  <a-camera id="camera-2" active="false"></a-camera>
+			</a-entity>
+
+			<!-- Middle left image: election trump -->
+			<a-box width="23" height="18" depth="0.25" position="-15 -1 0.3"></a-box>
+
+			<a-box width="12" height="6" depth="0.25" position="-35 -9 0.15" src="texture/gold.jpg">
+				<a-text value="Kimberly Pack" color="#FFFFFF" position="0 2 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="I Brought My Bible! 2020" color="#B4B8B8" position="0 1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Digital Photography and Camera Obscura" color="#B4B8B8" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="10 * 9.75 in" color="#B4B8B8" position="0 -1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+
+			<a-image src="#image-L2" width="23" height="18" depth="0.1" position="-15 -1 0.45"></a-image>
+
+
+			<!-- Centre Right image: election trump -->
+			<a-box width="29" height="18" depth="0.25" position="15 -1 0.3"></a-box>
+
+			<a-box width="12" height="6" depth="0.25" position="38 -9 0.15" src="texture/gold.jpg">
+				<a-text value="Kimberly Pack" color="#FFFFFF" position="0 2 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="All Are Welcome Here! 2020" color="#B4B8B8" position="0 1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Digital Photography and Camera Obscura" color="#B4B8B8" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="10 * 5.3 in" color="#B4B8B8" position="0 -1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+
+			<a-image src="#image-L4" width="29" height="18" depth="0.1" position="15 -1 0.45"></a-image>
+
+			
+		</a-box>
+
+
+
+
+
+		<!-- Right wall -->
+		<a-box width="100" height="45" depth="0.25" position="50 0 40" rotation="0 -90 0" color="#797D7D">
+			<a-entity position="-5 0 25">
+			  <a-camera id="camera-3" active="false"></a-camera>
+			</a-entity>
+
+			<!-- Middle left image - mask1 -->
+			<a-box width="26" height="18" depth="0.25" position="-15 -1.5 0.3"></a-box>
+
+			<a-box width="12" height="6" depth="0.25" position="-36 -9 0.15" src="texture/gold.jpg">
+				<a-text value="Kimberly Pack" color="#FFFFFF" position="0 2 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="I Don't Work for You! 2020" color="#B4B8B8" position="0 1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Digital Photography and Camera Obscura" color="#B4B8B8" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="10 * 8 in" color="#B4B8B8" position="0 -1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-R2" width="26" height="18" depth="0.1" position="-15 -1.5 0.45"></a-image>
+
+			<!-- Middle right image - mask2 -->
+			<a-box width="30" height="18" depth="0.25" position="15 -1.5 0.3"></a-box>
+
+			<a-box width="12" height="6" depth="0.25" position="38 -9 0.15" src="texture/gold.jpg">
+				<a-text value="Kimberly Pack" color="#FFFFFF" position="0 2 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="You Ain't Black! 2020" color="#B4B8B8" position="0 1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Digital Photography and Camera Obscura" color="#B4B8B8" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="10 * 6.4 in" color="#B4B8B8" position="0 -1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-R3" width="30" height="18" depth="0.1" position="15 -1.5 0.45"></a-image>
+
+			
+		</a-box>
+
+
+
+
+
+		<!-- Behind wall -->
+		<a-box width="70" height="45" depth="0.25" position="15 0 90" rotation="0 180 0" color="#797D7D">
+			<a-entity position="0 0 25">
+			  <a-camera id="camera-4" active="false"></a-camera>
+			</a-entity>
+
+			<!-- Middle image: Ines -->
+			<a-box width="30" height="20" depth="0.25" position="-2 -1 0.3"></a-box>
+
+			<a-box width="6" height="6" depth="0.25" position="20 -9 0.15" src="texture/gold.jpg">
+				<a-text value="Keyu Liu" color="#FFFFFF" position="0 2 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Swaying, 2020" color="#B4B8B8" position="0 1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Sculpture" color="#B4B8B8" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="7 * 8 in" color="#B4B8B8" position="0 -1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+
+			<a-image src="#image-B2" width="30" height="20" depth="0.1" position="-2 -1 0.45"></a-image>
+
+			
+		</a-box>
+
+
+		<!-- Seat -->
+		<a-box width="20" height="4" depth="4" position="15 -15 19" material="src: texture/leather.jpg; shader: flat; repeat: 1 1;"></a-box>
+		<a-box width="20" height="4" depth="4" position="12 -15 50" material="src: texture/leather.jpg; shader: flat; repeat: 1 1;"></a-box>
+		
+		<!-- Ground -->
+		<a-plane height="100" width="100" rotation="-90 0 0" position="0 -17.5 39.75" material="src: texture/stone.jpg; shader: flat; repeat: 6 6;"></a-plane>
+
+		<!-- Ceiling -->
+		<a-plane height="100" width="100" rotation="-270 0 0" position="0 17.5 39.75" material="src: texture/galaxy.jpg; shader: flat; repeat: 5 5;"></a-plane>
+	</a-scene>
+
+
+
+
+	
+	<script type="text/javascript">
+		var scene = document.querySelector('#gallery-scene');
+		var camera = 1;
+
+		scene.addEventListener('click', function() {
+
+			var currentCam = '#camera-' + camera;
+			if (camera < 3) {
+				camera++;
+			} else {
+				camera = 1;
+			}
+
+			var nextCam = '#camera-' + camera;
+
+			document.querySelector(currentCam).setAttribute('active', false);
+			document.querySelector(nextCam).setAttribute('active', true);
+		}, false);
+	</script>
+	</body>
+</html>

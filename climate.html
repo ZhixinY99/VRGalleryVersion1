@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Climate Change is Real</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<script src="aframe.min.js"></script>
+    </head>
+    
+
+<body>
+	<a-scene id="gallery-scene" antialias='true'>
+		<a-assets>
+			<!-- Behind Wall -->
+            <img id="image-B1" src="portfolio/climate/fire.jpg">
+            <img id="image-B2" src="portfolio/climate/fire.jpg">
+            <img id="image-B3" src="portfolio/climate/parasite2.jpg">
+
+            <!-- Forward Wall sophie--> 
+            <img id="image-F1" src="portfolio/climate/koala.jpg">
+            <img id="image-F2" src="portfolio/climate/earth.jpg">
+			<img id="image-F3" src="portfolio/climate/BW.jpg">
+            
+
+            <!-- Right Wall -->
+            <img id="image-R1" src="portfolio/climate/fire1.jpg">
+			<img id="image-R2" src="portfolio/climate/fire2.jpg">
+			<img id="image-R3" src="portfolio/climate/fire3.jpg">
+			<img id="image-R4" src="portfolio/climate/fire4.jpg">
+			<img id="image-R5" src="portfolio/climate/bird.jpg">
+            
+            <!-- Left Wall -->
+			<img id="image-L5" src="portfolio/climate/animat5.jpg"> 
+			<img id="image-L4" src="portfolio/climate/animat4.jpg">
+
+			<img id="image-L3" src="portfolio/climate/animat3.jpg">
+
+            <img id="image-L2" src="portfolio/climate/animat2.jpg">
+            <img id="image-L1" src="portfolio/climate/animat1.jpg">
+
+            
+			
+			
+			
+		</a-assets>
+
+
+
+		<!-- Main light -->
+		<a-entity position="0 25 37.5" rotation="0 0 0" light="color: #fff; type: point; intensity: 0.9;"></a-entity>
+
+		<a-entity position="0 0 7.5">
+		  <a-camera id="camera-1" wasd-controls="acceleration:350;" active="true"></a-camera>
+		</a-entity>
+
+
+
+
+		<!-- Forward wall sophie-->
+		<a-box width="120" height="45" depth="0.25" position="0 0 -35" color="#BF9960">
+
+			<!-- Middle image: one home -->
+			<a-box width="24" height="18" depth="0.25" position="0.25 2 0.3"></a-box>
+
+			<a-box width="7" height="6" depth="0.25" position="0.25 -12 0.15" src="texture/wood.jpg">
+				<a-text value="Sophie McMurdy" color="#000" position="0 1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="One Home, 2020" color="#242322" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Digital Media" color="#242322" position="0 -1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="24 * 18 in" color="#242322" position="0 -2 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			
+			<a-image src="#image-F2" width="24" height="18" depth="0.1" position="0.5 2 0.45"></a-image>
+
+			<!-- Left image: koala -->
+			<a-box width="8" height="11.5" depth="0.25" position="-28 1 0.3"></a-box>
+			<a-box width="7" height="6" depth="0.25" position="-28 -9 0.15" src="texture/wood.jpg">
+				<a-text value="Sophie McMurdy" color="#000" position="0 1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Koala's Plight, 2020" color="#242322" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Digital Media" color="#242322" position="0 -1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="8 * 11.5 in" color="#242322" position="0 -2 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-F1" width="8" height="11.5" depth="0.1" position="-28 1 0.45"></a-image>
+
+			<!-- Right image: scratch -->
+			<a-box width="8" height="10" depth="0.25" position="25 1 0.3"></a-box>
+			<a-box width="7" height="6" depth="0.25" position="25 -9 0.15" src="texture/wood.jpg">
+				<a-text value="Sophie McMurdy" color="#000" position="0 1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Poison, 2020" color="#242322" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Scratchboard" color="#242322" position="0 -1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="8 * 10 in" color="#242322" position="0 -2 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-F3" width="8" height="10" depth="0.1" position="25 1 0.45"></a-image>
+		</a-box>
+
+
+
+
+		<!-- Left wall -->
+		<a-box width="160" height="45" depth="0.25" position="-50 0 40" rotation="0 90 0" color="#000000" >
+			<a-entity position="0 0 30">
+			  <a-camera id="camera-2" active="false"></a-camera>
+			</a-entity>
+
+			<!-- Middle image: fire middle -->
+			<a-box width="10" height="14" depth="0.25" position="0 0 0.3"></a-box>
+			<a-box width="9" height="5" depth="0.25" position="0 -11 0.15" src="texture/gold.jpg">
+				<a-text value="Fangrenqi" color="#000" position="0 1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Heat Wave, 2020" color="#242322" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Animation (in progress), 59s" color="#242322" position="0 -1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-L3" width="10" height="14" depth="0.1" position="0 0 0.45"></a-image>
+
+			<!-- Middle left image: fire -->
+			<a-box width="22" height="14" depth="0.25" position="-18 0 0.3"></a-box>
+			<a-image src="#image-L2" width="22" height="14" depth="0.1" position="-18 0 0.45"></a-image>
+
+			<!-- Far Left image: fire  -->
+			<a-box width="22" height="14" depth="0.25" position="-42 0 0.3"></a-box>
+			<a-image src="#image-L1" width="22" height="14" depth="0.1" position="-42 0 0.45"></a-image>
+
+			<!-- Centre Right image: fire -->
+			<a-box width="18" height="14" depth="0.25" position="16 0 0.3"></a-box>
+			<a-image src="#image-L4" width="18" height="14" depth="0.1" position="16 0 0.45"></a-image>
+
+			<!-- Far right image:fire -->
+			<a-box width="22" height="14" depth="0.25" position="38 0 0.3"></a-box>
+			<a-image src="#image-L5" width="22" height="14" depth="0.1" position="38 0 0.45"></a-image>
+		</a-box>
+
+
+
+
+
+		<!-- Right wall -->
+		<a-box width="150" height="45" depth="0.25" position="50 0 40" rotation="0 -90 0" color="#BF9960">
+			<a-entity position="-5 0 25">
+			  <a-camera id="camera-3" active="false"></a-camera>
+			</a-entity>
+
+		<!-- middle image - bird photography -->
+			<a-box width="18" height="13" depth="0.25" position="0 0 0.3"></a-box>
+
+			<a-box width="8" height="6" depth="0.25" position="0 -12 0.15" src="texture/wood.jpg">
+				<a-text value="Fangrenqi" color="#000" position="0 1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Lake Merritt Afternoon, 2020" color="#242322" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Digital Photography" color="#242322" position="0 -1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Varibale Size" color="#242322" position="0 -2 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-R5" width="18" height="13" depth="0.1" position="0 0 0.45"></a-image>
+
+			<!-- Middle left image - flower -->
+			<a-box width="14" height="17" depth="0.25" position="-25 0 0.3"></a-box>
+			<a-image src="#image-R2" width="14" height="17" depth="0.1" position="-25 0 0.45"></a-image>
+
+			<!-- Left image - flower -->
+			<a-box width="13" height="17" depth="0.25" position="-43 0 0.3"></a-box>
+			<a-image src="#image-R1" width="13" height="17" depth="0.1" position="-43 0 0.45"></a-image>
+			
+			
+			<!-- Middle right image - flower -->
+			<a-box width="14" height="17" depth="0.25" position="25 0 0.3"></a-box>
+			<a-image src="#image-R3" width="13" height="17" depth="0.1" position="25 0 0.45"></a-image>
+
+			<!-- Right image - fower -->
+			<a-box width="13" height="17" depth="0.25" position="43 0 0.3"></a-box>
+			<a-image src="#image-R4" width="13" height="17" depth="0.1" position="43 0 0.45"></a-image>
+
+			
+		</a-box>
+
+
+
+
+
+		<!-- Behind wall -->
+		<a-box width="120" height="45" depth="0.25" position="0 0 115" rotation="0 180 0" color="#BF9960">
+			<a-entity position="0 0 25">
+			  <a-camera id="camera-4" active="false"></a-camera>
+			</a-entity>
+
+			<!-- Left image: fire flower as a whole -->
+			<a-box width="50" height="23" depth="0.25" position="10 0 0.3"></a-box>
+			<a-box width="7" height="6" depth="0.25" position="-25 0 0.15" src="texture/wood.jpg">
+				<a-text value="Fangrenqi" color="#000" position="0 1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Burning Danger, 2020" color="#242322" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Digital Painting" color="#242322" position="0 -1 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+				<a-text value="Varibale Size" color="#242322" position="0 -2 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-B1" width="50" height="23" depth="0.1" position="10 0 0.45"></a-image>
+		</a-box>
+
+
+		<!-- Seats -->
+		<a-cylinder height="5" radius="7" position="15 -15 19" color="#70573E" material="src: texture/ghost.jpg; shader: flat; repeat: 1 1;"></a-cylinder>
+		<a-cylinder height="5" radius="7" position="-5 -15 49" color="#70573E" material="src: texture/ghost.jpg; shader: flat; repeat: 1 1;"></a-cylinder>
+		<!-- Ground -->
+		<a-plane height="150" width="150" rotation="-90 0 0" position="0 -17.5 39.75" color="#E6BE83" material="src: texture/ash.jpg; shader: flat; repeat: 6 6;"></a-plane>
+
+		<!-- Ceiling -->
+		<a-plane height="150" width="150" rotation="-270 0 0" position="0 17.5 39.75" color="#F5A164" material="src: texture/nature.jpg; shader: flat; repeat: 6 6;"></a-plane>
+	</a-scene>
+
+
+
+
+	
+	<script type="text/javascript">
+		var scene = document.querySelector('#gallery-scene');
+		var camera = 1;
+
+		scene.addEventListener('click', function() {
+
+			var currentCam = '#camera-' + camera;
+			if (camera < 3) {
+				camera++;
+			} else {
+				camera = 1;
+			}
+
+			var nextCam = '#camera-' + camera;
+
+			document.querySelector(currentCam).setAttribute('active', false);
+			document.querySelector(nextCam).setAttribute('active', true);
+		}, false);
+	</script>
+	</body>
+</html>

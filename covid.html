@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>COVID-19</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<script src="aframe.min.js"></script>
+    </head>
+    
+
+<body>
+	<a-scene id="gallery-scene" antialias='true'>
+		<a-assets>
+			<!-- Behind Wall -->
+            <img id="image-B1" src="portfolio/covid/keyu.jpg">
+            <img id="image-B2" src="portfolio/covid/parasite1.jpg">
+            <img id="image-B3" src="portfolio/covid/parasite2.jpg">
+
+            <!-- Forward Wall -->
+            <img id="image-F1" src="portfolio/covid/fence.png">
+            <img id="image-F2" src="portfolio/covid/child.png">
+			<img id="image-F3" src="portfolio/covid/box.png">
+            
+
+
+
+            <!-- Right Wall -->
+            <img id="image-R1" src="portfolio/covid/flower.jpg">
+			<img id="image-R2" src="portfolio/covid/mask2.jpg">
+			<img id="image-R3" src="portfolio/covid/mask1.jpg">
+            <img id="image-R4" src="portfolio/covid/wakeup.jpg">
+            
+            <!-- Left Wall -->
+			<img id="image-L5" src="portfolio/covid/process.jpg"> 
+			<img id="image-L4" src="portfolio/covid/bed.jpg">
+
+			<img id="image-L3" src="portfolio/covid/desire.jpg">
+
+            <img id="image-L2" src="portfolio/covid/corner.jpg">
+            <img id="image-L1" src="portfolio/covid/life.jpg">
+
+            
+			
+			
+			
+		</a-assets>
+
+
+
+		<!-- Main light -->
+		<a-entity position="0 25 37.5" rotation="0 0 0" light="color: #fff; type: point; intensity: 0.9;"></a-entity>
+
+		<a-entity position="0 0 7.5">
+		  <a-camera id="camera-1" wasd-controls="acceleration:350;" active="true"></a-camera>
+		</a-entity>
+
+
+
+
+		<!-- Forward wall -->
+		<a-box width="162.5" height="135" depth="0.25" position="0 0 -55" color="#C5E3D5">
+
+			<!-- Middle image: children inside room photography -->
+			<a-box width="18.7" height="12" depth="0.25" position="0.25 -1.5 0.3"></a-box>
+			<a-box width="6" height="1" depth="0.25" position="0 -9 0.15">
+			    <a-text value="Jane Mckay" color="#000" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-F2" width="18.7" height="12" depth="0.1" position="0.5 -1.5 0.45"></a-image>
+
+			<!-- Left image: mask on the floor -->
+			<a-box width="17.95" height="12" depth="0.25" position="-20 -1.5 0.3"></a-box>
+			<a-box width="6" height="1" depth="0.25" position="-20 -9 0.15">
+				<a-text value="Jane McKay" color="#000" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-F1" width="17.95" height="12" depth="0.1" position="-20 -1.5 0.45"></a-image>
+
+			<!-- Right image: box with newspaper -->
+			<a-box width="16.15" height="12" depth="0.25" position="20.5 -1.5 0.3"></a-box>
+			<a-box width="7.5" height="1" depth="0.25" position="20.5 -9 0.15">
+				<a-text value="Jane McKay" color="#000" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-F3" width="16.15" height="12" depth="0.1" position="20.5 -1.5 0.45"></a-image>
+		</a-box>
+
+
+
+
+		<!-- Left wall -->
+		<a-box width="150" height="45" depth="0.25" position="-50 0 40" rotation="0 90 0" color="#C5E3D5" >
+			<a-entity position="0 0 30">
+			  <a-camera id="camera-2" active="false"></a-camera>
+			</a-entity>
+
+			<!-- Middle image: desire -->
+			<a-box width="17.95" height="12" depth="0.25" position="0 -1.5 0.3"></a-box>
+			<a-box width="7" height="1" depth="0.25" position="0 -9 0.15">
+				<a-text value="Mingyuan Dong" color="#000" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-L3" width="17.95" height="12" depth="0.1" position="0 -1.5 0.45"></a-image>
+
+			<!-- Middle left image: door -->
+			<a-box width="17.8" height="12" depth="0.25" position="-20.5 -1.5 0.3"></a-box>
+			<a-box width="6" height="1" depth="0.25" position="-20.5 -9 0.15">
+				<a-text value="Mingyuan Dong" color="#000" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-L2" width="17.8" height="12" depth="0.1" position="-20.5 -1.5 0.45"></a-image>
+
+			<!-- Far Left image: life  -->
+			<a-box width="18.65" height="12" depth="0.25" position="-41.25 -1.5 0.3"></a-box>
+			<a-box width="7" height="1" depth="0.25" position="-41.25 -9 0.15">
+				<a-text value="Mingyuan Dong" color="#000" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-L1" width="18.65" height="12" depth="0.1" position="-41.25 -1.5 0.45"></a-image>
+
+			<!-- Centre Right image: bed image with process image -->
+			<a-box width="16.8" height="12" depth="0.25" position="20.25 -1.5 0.3"></a-box>
+			<a-box width="6" height="1" depth="0.25" position="20.25 -9 0.15">
+				<a-text value="Mingyuan Dong" color="#000" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-L4" width="16.8" height="12" depth="0.1" position="20.25 -1.5 0.45"></a-image>
+
+			<!-- Far right image: process image -->
+			<a-box width="18" height="12" depth="0.25" position="42.25 -1.5 0.3"></a-box>
+			<a-box width="6" height="1" depth="0.25" position="42.25 -9 0.15">
+				<a-text value="Mingyuan Dong" color="#000" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-L5" width="18" height="12" depth="0.1" position="42.25 -1.5 0.45"></a-image>
+		</a-box>
+
+
+
+
+
+		<!-- Right wall -->
+		<a-box width="150" height="55" depth="0.25" position="50 0 40" rotation="0 -90 0" color="#C5E3D5">
+			<a-entity position="-5 0 25">
+			  <a-camera id="camera-3" active="false"></a-camera>
+			</a-entity>
+
+			<!-- Middle left image - mask1 -->
+			<a-box width="17.95" height="12" depth="0.25" position="-8.5 -1.5 0.3"></a-box>
+			<a-box width="7" height="1" depth="0.25" position="-8.5 -9 0.15">
+				<a-text value="Christina De La Cruz" color="#000" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-R2" width="17.95" height="12" depth="0.1" position="-8.5 -1.5 0.45"></a-image>
+
+			<!-- Middle right image - mask2 -->
+			<a-box width="17.5" height="12" depth="0.25" position="16 -1.5 0.3"></a-box>
+			<a-box width="6" height="1" depth="0.25" position="16 -9 0.15">
+				<a-text value="Christina De La Cruz" color="#000" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-R3" width="17.5" height="12" depth="0.1" position="16 -1.5 0.45"></a-image>
+
+			<!-- Left image - flower -->
+			<a-box width="19.65" height="12" depth="0.25" position="-34 -1.5 0.3"></a-box>
+			<a-box width="6" height="1" depth="0.25" position="-34 -9 0.15">
+				<a-text value="Fangrenqi" color="#000" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-R1" width="19.65" height="12" depth="0.1" position="-34 -1.5 0.45"></a-image>
+
+			<!-- Right image - wake up -->
+			<a-box width="17.65" height="12" depth="0.25" position="40 -1.5 0.3"></a-box>
+			<a-box width="4" height="1" depth="0.25" position="40 -9 0.15">
+				<a-text value="Jaz Bryant" color="#000" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-R4" width="17.65" height="12" depth="0.1" position="40 -1.5 0.45"></a-image>
+		</a-box>
+
+
+
+
+
+		<!-- Behind wall -->
+		<a-box width="100" height="45" depth="0.25" position="0 0 115" rotation="0 180 0" color="#C5E3D5">
+			<a-entity position="0 0 25">
+			  <a-camera id="camera-4" active="false"></a-camera>
+			</a-entity>
+
+			<!-- Middle image: Ines -->
+			<a-box width="18" height="12" depth="0.25" position="-1.25 -1.5 0.3"></a-box>
+			<a-box width="6" height="1" depth="0.25" position="-1.25 -9 0.15">
+				<a-text value="Keyu Liu" color="#000" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-B2" width="18" height="12" depth="0.1" position="-1.25 -1.5 0.45"></a-image>
+
+			<!-- Left image: Alice -->
+			<a-box width="14.45" height="12" depth="0.25" position="-20.75 -1.5 0.3"></a-box>
+			<a-box width="6" height="1" depth="0.25" position="-20.75 -9 0.15">
+				<a-text value="Keyu Liu" color="#000" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-B1" width="14.45" height="12" depth="0.1" position="-20.75 -1.5 0.45"></a-image>
+
+			<!-- Right image: Anna -->
+			<a-box width="17.95" height="12" depth="0.25" position="19.75 -1.5 0.3"></a-box>
+			<a-box width="6" height="1" depth="0.25" position="19.75 -9 0.15">
+				<a-text value="Keyu Liu" color="#000" position="0 0 0.25" scale="2.5 2.5 0.5" align="center"></a-text>
+			</a-box>
+			<a-image src="#image-B3" width="17.95" height="12" depth="0.1" position="19.75 -1.5 0.45"></a-image>
+		</a-box>
+
+
+
+
+		<!-- Ground -->
+		<a-plane height="150" width="100" rotation="-90 0 0" position="0 -17.5 39.75" color="#C5E3D5" material="src: texture/marble.jpg; shader: flat; repeat: 6 6;"></a-plane>
+
+		<!-- Ceiling -->
+		<a-plane height="130" width="100" rotation="-270 0 0" position="0 17.5 39.75" color="#C5E3D5" material="src: texture/pattern.jpg; shader: flat; repeat: 6 6;"></a-plane>
+	</a-scene>
+
+
+
+
+	
+	<script type="text/javascript">
+		var scene = document.querySelector('#gallery-scene');
+		var camera = 1;
+
+		scene.addEventListener('click', function() {
+
+			var currentCam = '#camera-' + camera;
+			if (camera < 3) {
+				camera++;
+			} else {
+				camera = 1;
+			}
+
+			var nextCam = '#camera-' + camera;
+
+			document.querySelector(currentCam).setAttribute('active', false);
+			document.querySelector(nextCam).setAttribute('active', true);
+		}, false);
+	</script>
+	</body>
+</html>
